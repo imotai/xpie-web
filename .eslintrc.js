@@ -22,5 +22,10 @@ module.exports = {
   rules: {
     // Place to specify ESLint rules. Can be used to overwrite rules specified from the extended configs
     // e.g. "@typescript-eslint/explicit-function-return-type": "off",
+     "prettier/prettier": ["warn",  {"endOfLine": "auto"}],
+      "testing-library/prefer-screen-queries": "error",
+      "testing-library/no-manual-cleanup": "error",
+      "testing-library/prefer-wait-for": "error",
+      "testing-library/no-await-sync-events": "error"
   },
 }
