@@ -1,6 +1,7 @@
 import React from 'react';
 import classNames from 'classnames';
 import { DocsExample } from 'src/components';
+import Markdown from 'react-markdown';
 
 import {
     CAvatar,
@@ -29,7 +30,7 @@ import {
     CFormTextarea,
     CInputGroup,
     CInputGroupText,
-    CCallout
+    CCallout,
 } from '@coreui/react';
 import CIcon from '@coreui/icons-react';
 import {
@@ -57,23 +58,89 @@ import {
 } from '@coreui/icons';
 
 const Chat2Issue = () => {
+    const markdown = `# Hi, *Pluto*!
+Here is an example of a plugin to highlight code:
+
+`;
+
     return (
         <>
-            <CContainer>
+            <CContainer fluid>
                 <CRow>
                     <CCol xs={4}>
                         <CListGroup>
-                            <CListGroupItem component="a" active>
+                            <CListGroupItem component="a" color="dark">
                                 <div className="d-flex w-100 justify-content-between">
-                                    <h5 className="mb-1">List group item heading</h5>
-                                    <small>3 days ago</small>
+                                    <h5 className="mb-1">
+                                        Improvement: add warning message for reaching the max iterations{' '}
+                                    </h5>
                                 </div>
                                 <p className="mb-1">
                                     Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus
                                     varius blandit.
                                 </p>
-                                <small>Donec id elit non mi porta.</small>
+                                <small>3 days ago</small>
                             </CListGroupItem>
+                            <CListGroupItem component="a">
+                                <div className="d-flex w-100 justify-content-between">
+                                    <h5 className="mb-1">List group item heading</h5>
+                                    <small className="text-medium-emphasis">3 days ago</small>
+                                </div>
+                                <p className="mb-1">
+                                    Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus
+                                    varius blandit.
+                                </p>
+                                <small className="text-medium-emphasis">Donec id elit non mi porta.</small>
+                            </CListGroupItem>
+
+                            <CListGroupItem component="a">
+                                <div className="d-flex w-100 justify-content-between">
+                                    <h5 className="mb-1">List group item heading</h5>
+                                    <small className="text-medium-emphasis">3 days ago</small>
+                                </div>
+                                <p className="mb-1">
+                                    Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus
+                                    varius blandit.
+                                </p>
+                                <small className="text-medium-emphasis">Donec id elit non mi porta.</small>
+                            </CListGroupItem>
+
+                            <CListGroupItem component="a">
+                                <div className="d-flex w-100 justify-content-between">
+                                    <h5 className="mb-1">List group item heading</h5>
+                                    <small className="text-medium-emphasis">3 days ago</small>
+                                </div>
+                                <p className="mb-1">
+                                    Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus
+                                    varius blandit.
+                                </p>
+                                <small className="text-medium-emphasis">Donec id elit non mi porta.</small>
+                            </CListGroupItem>
+
+                            <CListGroupItem component="a">
+                                <div className="d-flex w-100 justify-content-between">
+                                    <h5 className="mb-1">List group item heading</h5>
+                                    <small className="text-medium-emphasis">3 days ago</small>
+                                </div>
+                                <p className="mb-1">
+                                    Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus
+                                    varius blandit.
+                                </p>
+                                <small className="text-medium-emphasis">Donec id elit non mi porta.</small>
+                            </CListGroupItem>
+
+                            <CListGroupItem component="a">
+                                <div className="d-flex w-100 justify-content-between">
+                                    <h5 className="mb-1">List group item heading</h5>
+                                    <small className="text-medium-emphasis">3 days ago</small>
+                                </div>
+                                <p className="mb-1">
+                                    Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus
+                                    varius blandit.
+                                </p>
+                                <small className="text-medium-emphasis">Donec id elit non mi porta.</small>
+                            </CListGroupItem>
+
                             <CListGroupItem component="a">
                                 <div className="d-flex w-100 justify-content-between">
                                     <h5 className="mb-1">List group item heading</h5>
@@ -101,24 +168,58 @@ const Chat2Issue = () => {
                     <CCol xs={8}>
                         <CCard className="mb-4">
                             <CCardHeader>
-                                <strong>List group item heading</strong>
+                                <strong>X Copilot</strong>
                             </CCardHeader>
                             <CCardBody>
                                 <CContainer>
                                     <CRow>
                                         <CCol xs={1}>
-                                            <CAvatar color="secondary" size="lg">X</CAvatar>
+                                            <CAvatar color="primary" size="lg">
+                                                U
+                                            </CAvatar>
                                         </CCol>
                                         <CCol xs={11}>
-<CCallout color="light">
-          New to or unfamiliar with flexbox? Read this CSS Tricks flexbox guide for background,
-          terminology, guidelines, and code snippets.
-        </CCallout>
-        </CCol>
+                                            <CCallout color="primary">
+                                                New to or unfamiliar with flexbox? Read this CSS Tricks flexbox guide
+                                                for background, terminology, guidelines, and code snippets.
+                                            </CCallout>
+                                        </CCol>
+                                    </CRow>
+
+                                    <CRow>
+                                        <CCol xs={1}>
+                                            <CAvatar color="secondary" size="lg">
+                                                X
+                                            </CAvatar>
+                                        </CCol>
+                                        <CCol xs={11}>
+                                            <CCallout color="light">
+                                                <Markdown>{markdown}</Markdown>
+                                            </CCallout>
+                                        </CCol>
                                     </CRow>
                                 </CContainer>
                             </CCardBody>
                             <CCardFooter>
+                                <CContainer>
+                                    <CRow>
+                                        <CCol>
+                                            <CCallout color="primary">
+                                                Generate the logic data flow for the issue
+                                            </CCallout>
+                                        </CCol>
+                                        <CCol xs={{ span: true, order: 5 }}>
+                                            <CCallout color="primary">
+                                                Generate the logic data flow for the issue
+                                            </CCallout>
+                                        </CCol>
+                                        <CCol xs={{ span: true, order: 1 }}>
+                                            <CCallout color="primary">
+                                                Generate the logic data flow for the issue
+                                            </CCallout>
+                                        </CCol>
+                                    </CRow>
+                                </CContainer>
                                 <CInputGroup className="mb-3">
                                     <CFormInput
                                         placeholder="generate the code"

@@ -4,10 +4,9 @@ import { CContainer, CSpinner } from '@coreui/react';
 
 // routes config
 import routes from '../routes';
-
 const AppContent = () => {
     return (
-        <CContainer className="px-4" lg>
+        <CContainer fluid>
             <Suspense fallback={<CSpinner color="primary" />}>
                 <Routes>
                     {routes.map((route, idx) => {

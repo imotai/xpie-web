@@ -18,7 +18,7 @@ import { CNavGroup, CNavItem, CNavTitle } from '@coreui/react';
 const _nav = [
     {
         component: CNavItem,
-        name: 'Chat2Issue',
+        name: 'Dev Workspace',
         to: '/task2code',
         icon: <CIcon icon={cilSpeedometer} customClassName="nav-icon" />,
     },

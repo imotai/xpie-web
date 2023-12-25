@@ -27,7 +27,6 @@ const AppSidebar = () => {
     const dispatch = useDispatch();
     const unfoldable = useSelector(state => state.sidebarUnfoldable);
     const sidebarShow = useSelector(state => state.sidebarShow);
-
     return (
         <CSidebar
             className="border-end"
@@ -62,5 +61,4 @@ const AppSidebar = () => {
         </CSidebar>
     );
 };
-
 export default React.memo(AppSidebar);
