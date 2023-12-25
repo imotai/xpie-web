@@ -4,6 +4,7 @@ import { DocsExample } from 'src/components';
 import Markdown from 'react-markdown';
 
 import {
+    CBadge,
     CAvatar,
     CButton,
     CButtonGroup,
@@ -69,7 +70,7 @@ Here is an example of a plugin to highlight code:
                 <CRow>
                     <CCol xs={4}>
                         <CListGroup>
-                            <CListGroupItem component="a" color="dark">
+                            <CListGroupItem component="button" color="dark">
                                 <div className="d-flex w-100 justify-content-between">
                                     <h5 className="mb-1">
                                         Improvement: add warning message for reaching the max iterations{' '}
@@ -81,7 +82,19 @@ Here is an example of a plugin to highlight code:
                                 </p>
                                 <small>3 days ago</small>
                             </CListGroupItem>
-                            <CListGroupItem component="a">
+                            <CListGroupItem component="button">
+                                <div className="d-flex w-100 justify-content-between">
+                                    <h5 className="mb-1">List group item heading</h5>
+                                    <small className="text-medium-emphasis">3 days ago</small>
+                                </div>
+                                <p className="mb-1">
+                                    Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus
+                                    varius blandit.
+                                </p>
+                                <small className="text-medium-emphasis">Donec id elit non mi porta.</small>
+                            </CListGroupItem>
+
+                            <CListGroupItem component="button">
                                 <div className="d-flex w-100 justify-content-between">
                                     <h5 className="mb-1">List group item heading</h5>
                                     <small className="text-medium-emphasis">3 days ago</small>
@@ -128,7 +141,6 @@ Here is an example of a plugin to highlight code:
                                 </p>
                                 <small className="text-medium-emphasis">Donec id elit non mi porta.</small>
                             </CListGroupItem>
-
                             <CListGroupItem component="a">
                                 <div className="d-flex w-100 justify-content-between">
                                     <h5 className="mb-1">List group item heading</h5>
@@ -138,29 +150,7 @@ Here is an example of a plugin to highlight code:
                                     Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus
                                     varius blandit.
                                 </p>
-                                <small className="text-medium-emphasis">Donec id elit non mi porta.</small>
-                            </CListGroupItem>
-
-                            <CListGroupItem component="a">
-                                <div className="d-flex w-100 justify-content-between">
-                                    <h5 className="mb-1">List group item heading</h5>
-                                    <small className="text-medium-emphasis">3 days ago</small>
-                                </div>
-                                <p className="mb-1">
-                                    Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus
-                                    varius blandit.
-                                </p>
-                                <small className="text-medium-emphasis">Donec id elit non mi porta.</small>
-                            </CListGroupItem>
-                            <CListGroupItem component="a">
-                                <div className="d-flex w-100 justify-content-between">
-                                    <h5 className="mb-1">List group item heading</h5>
-                                    <small className="text-medium-emphasis">3 days ago</small>
-                                </div>
-                                <p className="mb-1">
-                                    Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus
-                                    varius blandit.
-                                </p>
+                                <p><small className="text-medium-emphasis"><CBadge color="primary" shape="rounded-pill">primary</CBadge></small> </p>
                                 <small className="text-medium-emphasis">Donec id elit non mi porta.</small>
                             </CListGroupItem>
                         </CListGroup>
