@@ -16,12 +16,20 @@ import {
 import { CNavGroup, CNavItem, CNavTitle } from '@coreui/react';
 
 const _nav = [
+
     {
         component: CNavItem,
         name: 'Dev Workspace',
         to: '/task2code',
         icon: <CIcon icon={cilSpeedometer} customClassName="nav-icon" />,
     },
+    {
+        component: CNavItem,
+        name: 'QA Workspace',
+        to: '/qa2code',
+        icon: <CIcon icon={cilSpeedometer} customClassName="nav-icon" />,
+    },
+
     {
         component: CNavItem,
         name: 'Dashboard',

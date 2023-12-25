@@ -72,8 +72,8 @@ Here is an example of a plugin to highlight code:
                         <CListGroup>
                             <CListGroupItem component="button" color="dark">
                                 <div className="d-flex w-100 justify-content-between">
-                                    <h5 className="mb-1">
-                                        Improvement: add warning message for reaching the max iterations{' '}
+                                    <h5 className="mb-1 text-truncate">
+                                        Improvement: add warning message for reaching the max iterations
                                     </h5>
                                 </div>
                                 <p className="mb-1">
