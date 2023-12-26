@@ -14,8 +14,7 @@ import {
     CRow,
 } from '@coreui/react';
 import CIcon from '@coreui/icons-react';
-import { cibGitlab, cibProbot, cibGithub, cilLockLocked, cilUser } from '@coreui/icons';
-
+import { cibGitlab, cibGithub } from '@coreui/icons';
 const Login = () => {
     return (
         <div className="bg-body-tertiary min-vh-100 d-flex flex-row align-items-center">

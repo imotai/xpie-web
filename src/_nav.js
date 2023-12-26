@@ -16,7 +16,6 @@ import {
 import { CNavGroup, CNavItem, CNavTitle } from '@coreui/react';
 
 const _nav = [
-
     {
         component: CNavItem,
         name: 'Dev Workspace',

@@ -150,7 +150,13 @@ Here is an example of a plugin to highlight code:
                                     Donec id elit non mi porta gravida at eget metus. Maecenas sed diam eget risus
                                     varius blandit.
                                 </p>
-                                <p><small className="text-medium-emphasis"><CBadge color="primary" shape="rounded-pill">primary</CBadge></small> </p>
+                                <p>
+                                    <small className="text-medium-emphasis">
+                                        <CBadge color="primary" shape="rounded-pill">
+                                            primary
+                                        </CBadge>
+                                    </small>{' '}
+                                </p>
                                 <small className="text-medium-emphasis">Donec id elit non mi porta.</small>
                             </CListGroupItem>
                         </CListGroup>
